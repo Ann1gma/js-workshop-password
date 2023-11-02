@@ -1,4 +1,7 @@
 /**
+ * 
+ * UPPGIFTEN:
+ * 
  * Workshop: Password Checker
  *
  * Skriv kod som kollar att lösenordet i variabeln password har
@@ -18,7 +21,7 @@ let password;
 // password = "password"; // inte giltigt
 // password = "pa$sword"; // giltigt
 // password = "p@ssw%rd"; // giltigt
- password = "pa$$word"; // giltigt
+// password = "pa$$word"; // giltigt
 // password = "secretpassword"; // inte giltigt
 // password = "secret-password"; // giltigt
 // password = "such-password-much-secure-very-long"; // giltigt
@@ -34,18 +37,7 @@ console.log(`🕵🏻 Checking password '${password}'`);
 // Skriv din kod här
 
 
-
-
-/*let count = 0;
-
-
-for (let i = 0; i < specialChars.length; i++) {
-	if(password.includes(specialChars[i])){
-		count++
-	}
-	console.log(count);
-}*/
-
+/*Räknare som gäller för båda utföranden*/
 let count = 0;  
 
 for (let i = 0; i < password.length; i++) {   
@@ -57,7 +49,10 @@ for (let i = 0; i < password.length; i++) {
 
 console.log("count", count);
 
-/*
+
+
+/* Utförande 1
+
 if (password.length >= 16) {
 	console.log("Speak friend and enter");
 } else if(password.length >= 12 && password.includes("-")) {
@@ -70,6 +65,10 @@ if (password.length >= 16) {
 	console.log("I find your lack of STRENGTH disturbing!");
 }*/
 
+
+
+
+/* Utförande 2*/
 
 if (
 	(password.length >= 16) ||
